@@ -1,0 +1,11 @@
+.DashboardList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.DashboardCard {
+  width: calc(100% * (1 / 2) - 10px);
+  margin-right: 10px;
+  margin-bottom: 10px;
+  height: auto;
+}
