@@ -1,11 +1,13 @@
 .DashboardList {
   display: flex;
   flex-wrap: wrap;
+  width: 75%;
+  margin-top: 20px;
+  margin: 0 auto;
 }
 
 .DashboardCard {
   width: calc(100% * (1 / 2) - 10px);
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin: 5px;
   height: auto;
 }

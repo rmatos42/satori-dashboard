@@ -15,8 +15,12 @@ export default class DashboardList extends Component {
   render() {
     return (
       <div className="DashboardList">
-        {this.state.cards.map((card_item) =>
-          <DashboardCard header={card_item.header} info={card_item.info} />
+        {this.props.cards.map((card_item, index) =>
+          <DashboardCard 
+            deleteCard={this.props.deleteCard}
+            header={card_item.header}
+            info={card_item.info}
+            index={index}/>
         )}
       </div>
     );
