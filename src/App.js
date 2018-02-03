@@ -28,6 +28,20 @@ class App extends Component {
           info: 'asdfjlsadjf asdfk asjdlf asdflas jflskadfkljfakjlf askdjf asldkfjasldfjaldfjja aksdjfkalfjd',
         }
       ],
+      card_types: [
+        {
+          name: 'Facebook',
+          render: null,
+        },
+        {
+          name: 'LinkedIn',
+          render: null,
+        },
+        {
+          name: '23andme',
+          render: null,
+        }
+      ]
     }
     this.addCard = this.addCard.bind(this);
     this.deleteCard = this.deleteCard.bind(this);
@@ -52,7 +66,7 @@ class App extends Component {
   render() {
     return (
       <MuiThemeProvider>
-        <TitleBar addCard={() => this.addCard('test', 'test')} />
+        <TitleBar card_types={this.state.card_types} addCard={this.addCard} />
         <DashboardList cards={this.state.cards} deleteCard={this.deleteCard}/>
       </MuiThemeProvider>
     );
